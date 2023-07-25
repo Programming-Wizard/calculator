@@ -1,3 +1,38 @@
+document.addEventListener("DOMContentLoaded", function()
+{
+  const buttons = document.querySelectorAll("#numberkeys");
+  buttons.forEach((button) => {
+    button.addEventListener("mouseenter", function() {
+      button.style.backgroundColor = "lightblue";
+    });
+
+    button.addEventListener("mouseleave", function() {
+      button.style.backgroundColor = "darkcyan";
+    });
+  });
+
+  const opVbuttons = document.querySelectorAll("#operatorkeysV");
+  opVbuttons.forEach((button) => {
+    button.addEventListener("mouseenter", function() {
+      button.style.backgroundColor = "lightblue";
+    });
+
+    button.addEventListener("mouseleave", function() {
+      button.style.backgroundColor = "cornflowerblue";
+    });
+  });
+
+  const opHbuttons = document.querySelectorAll("#operatorkeysH");
+  opHbuttons.forEach((button) => {
+    button.addEventListener("mouseenter", function() {
+      button.style.backgroundColor = "lightblue";
+    });
+
+    button.addEventListener("mouseleave", function() {
+      button.style.backgroundColor = "coral";
+    });
+  });
+});
 document.addEventListener("DOMContentLoaded", function() {
     let num1 = null;
     let num2 = null;

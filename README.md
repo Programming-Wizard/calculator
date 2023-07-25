@@ -1,2 +1,2 @@
 # calculator
-https://programming-wizard.github.io/calculator(not yet available to be viewed)
+https://programming-wizard.github.io/calculator
