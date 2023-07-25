@@ -21,7 +21,7 @@ button{
     background-color: aquamarine;
     border: .5em black solid;
     flex-flow: column;
-    width: 38.5%;
+    width: 38.8%;
     height: 83%;
     border-radius: 1em;
 }
@@ -62,7 +62,7 @@ button{
     justify-content: center;
     width: 26%;
     height: max-content;
-    margin-top: -26.8em;
+    margin-top: -26.9em;
     margin-left: 73.5%;
 }
 
