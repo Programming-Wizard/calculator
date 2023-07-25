@@ -1,7 +1,3 @@
-/* *{
-    border-radius: 2em;
-} */
-
 body {
     background: blanchedalmond;
 }
@@ -25,10 +21,9 @@ button{
     background-color: aquamarine;
     border: .5em black solid;
     flex-flow: column;
-    width: 38%;
+    width: 38.5%;
     height: 83%;
     border-radius: 1em;
-    /* z-index: 1; */
 }
 
 .calc-display {
@@ -42,16 +37,15 @@ button{
     font-family: Ubuntu;
     font-size: 50px;
     font-weight: bolder;
-    /* z-index: 1; */
+    height: 9%;
 }
 
 .calc-operatorpadH{
     display: flex;
     flex-direction: row;
-    /* margin-left: 0.1em; */
+    /* margin-left: -0.25em; */
     align-items: center;
     justify-content: center;
-    /* z-index: 999; */
 }   
 
 .calc-operatorpadH button{
@@ -82,8 +76,7 @@ button{
 
 .calc-numberpad{
     display: flow-root;
-    margin-left: 0.1em;
-    /* z-index: 3; */
+    margin-left: 0.6em;
 }
 
 .calc-numberpad button{
@@ -91,7 +84,7 @@ button{
     border: 0.2em solid black;
     background-color: darkcyan;
     color: whitesmoke;
-    padding: 3em 4.54em;
+    padding: 3em 4.5em;
     margin: 0.2em 0.2em;
 }
 
