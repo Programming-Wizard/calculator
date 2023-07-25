@@ -1,16 +1,17 @@
-const display = document.querySelector(".calc-display");
-const currentNumber = "0";
-function clear()
-{
-    display.innerHTML = currentNumber;
-}
-
 document.addEventListener("DOMContentLoaded", function() {
-    const num1 = null;
-    const num2 = null;
+    let num1 = null;
+    let num2 = null;
+    let add = false;
+    let sub = false;
+    let mult = false;
+    let divide = false;
     const display = document.querySelector(".calc-display");
-    let currentNumber = "0"; // Variable to store the current number being entered
-
+    let currentNumber = "0";
+    
+    function clear()
+    {
+        currentNumber = "";
+    }
   
     function updateDisplay() 
     {
@@ -29,21 +30,64 @@ document.addEventListener("DOMContentLoaded", function() {
       } 
       else if (buttonText === "=") 
       {
-
+        num2 = Math.floor(currentNumber)
+        if(add)
+        {
+          currentNumber = num1 + num2;
+        }
+        else if(sub)
+        {
+          currentNumber = num1 - num2;
+        }
+        else if(mult)
+        {
+          currentNumber = num1 * num2;
+        }
+        else if(divide)
+        {
+          currentNumber = num1 / num2;
+        }
       } 
       else if (buttonText === "+") 
       {
-
+        num1  = Math.floor(currentNumber);
+        add = true;
+        sub = false;
+        mult = false;
+        divide = false;
+        clear();
       } 
-      else if (buttonText === "=") 
+      else if (buttonText === "-") 
       {
-        
+        num1  = Math.floor(currentNumber);
+        add = false;
+        sub = true;
+        mult = false;
+        divide = false;
+        clear();
+      } 
+      else if (buttonText === "*") 
+      {
+        num1  = Math.floor(currentNumber);
+        add = false;
+        sub = false;
+        mult = true;
+        divide = false;
+        clear();
+      } 
+      else if (buttonText === "/") 
+      {
+        num1  = Math.floor(currentNumber);
+        add = false;
+        sub = false;
+        mult = false;
+        divide = true;
+        clear();
       } 
       else if (buttonText === ".") 
       {
         if (currentNumber.includes(".") === false) 
         {
-          // Prevent multiple decimals in the same number
           currentNumber += buttonText;
         }
       } 
@@ -51,24 +95,23 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         if (currentNumber === "0") 
         {
-          currentNumber = buttonText; // If the current number is 0, replace it with the button's value
+          currentNumber = buttonText;
         } 
         else 
         {
-          currentNumber += buttonText; // Otherwise, append the button's value to the current number
+          currentNumber += buttonText;
         }
       }
-  
-      updateDisplay(); // Update the display with the current number
+      
+      updateDisplay();
     }
   
     const buttons = document.querySelectorAll("button");
   
-    // Add event listeners for each button
     buttons.forEach((button) => {
       button.addEventListener("click", function () {
         const buttonText = this.textContent;
-        handleButtonClick(buttonText); // Call the function to handle the button click
+        handleButtonClick(buttonText);
         // alert(buttonText)
       });
     });
