@@ -25,7 +25,7 @@ button{
     background-color: aquamarine;
     border: .5em black solid;
     flex-flow: column;
-    width: 30%;
+    width: 38%;
     height: 83%;
     border-radius: 1em;
     /* z-index: 1; */
