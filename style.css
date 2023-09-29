@@ -1,93 +1,140 @@
 body {
-    background: blanchedalmond;
+  background: blanchedalmond;
+  /* overflow: hidden; */
 }
 
-button{
-    font-weight: bolder;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    
+button {
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50rem;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  height: fit-content;
+  align-items: center;
+  width: 100%;
+    margin-top: 2%;
 }
 
 .calc-window {
-    display: flex;
-    background-color: aquamarine;
-    border: .5em black solid;
-    flex-flow: column;
-    width: 38.8%;
-    height: 83%;
-    border-radius: 1em;
+  display: flex;
+  background-color: aquamarine;
+  border: 0.5em black solid;
+  flex-flow: column;
+  width: 38.8%;
+  height: 75%;
+  border-radius: 1em;
 }
 
 .calc-display {
-    background-color: burlywood;
-    border: 0.1em solid black;
-    margin-top: 0.7em;
-    margin-bottom: 0.3em;
-    text-align: end;
-    padding: 0.5em 2em;
-    border-radius: 1em;
-    font-family: Ubuntu;
-    font-size: 50px;
-    font-weight: bolder;
-    height: 9%;
+  background-color: burlywood;
+  border: 0.1em solid black;
+  margin-top: 0.7em;
+  margin-bottom: 0.3em;
+  text-align: end;
+  padding: 7%;
+  border-radius: 1em;
+  font-family: Ubuntu;
+  font-size: 50px;
+  font-weight: bolder;
+  height: 9%;
 }
 
-.calc-operatorpadH{
-    display: flex;
-    flex-direction: row;
-    /* margin-left: -0.25em; */
-    align-items: center;
-    justify-content: center;
-}   
-
-.calc-operatorpadH button{
-    border-radius: 1em;
-    border: 0.2em solid black;
-    background-color: coral;
-    padding: 1.5em 4.5em;
-    margin: 0.2em 0.2em;
+.calc-buttons {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.calc-operatorpadH {
+  display: flex;
+  flex-direction: row;
+  width: inherit;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
 }
 
-.calc-operatorpadV{
-    display: block;
-    align-items: center;
-    justify-content: center;
-    width: 26%;
-    height: max-content;
-    margin-top: -26.9em;
-    margin-left: 73.5%;
+.calc-operatorpadH button {
+  align-self: center;
+  border-radius: 1em;
+  border: 0.2em solid black;
+  background-color: coral;
+  padding: 10% 26%;
+  margin: 0.2%;
 }
 
-.calc-operatorpadV button{
-    border-radius: 1em;
-    border: 0.2em solid black;
-    background-color: cornflowerblue;
-    padding: 3em 5em;
-    margin: 0.2em 0.2em;
+.calc-operatorpadV {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 30%;
+  justify-content: center;
+  justify-items: center;
 }
 
-.calc-numberpad{
-    display: flow-root;
-    margin-left: 0.6em;
+.calc-operatorpadV button {
+  border-radius: 1em;
+  align-self: center;
+  border: 0.2em solid black;
+  background-color: cornflowerblue;
+  width: 85%;
+  padding: 3em 0em;
+  margin: 0.2em 0.2em;
 }
 
-.calc-numberpad button{
-    border-radius: 1em;
-    border: 0.2em solid black;
-    background-color: darkcyan;
-    color: whitesmoke;
-    padding: 3em 4.5em;
-    margin: 0.2em 0.2em;
+.calc-numberpad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  width: 70%;
+}
+.num {
+  display: flex;
+  flex-direction: row;
+  height: 25%;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
-.calc-numberpad > .zero-button{
-    padding: 3em 9.9em;
+.calc-numberpad .num button {
+  /* align-self: center; */
+  border-radius: 1em;
+  border: 0.2em solid black;
+  background-color: darkcyan;
+  color: whitesmoke;
+  width: inherit;
+  padding: 10%;
+  margin: 0.1em 0.1em;
+}
+
+.ending-button {
+  display: flex;
+  height: 25%;
+  width: 100%;
+}
+.ending-button button {
+  border-radius: 1em;
+  border: 0.2em solid black;
+  background-color: darkcyan;
+  color: whitesmoke;
+}
+.zero-button
+{
+    width: 60%;
+}
+.zero-button button{
+    padding: 15% 45%;
+    margin: 0.2em;
+}
+.dot button
+{
+    padding: 22.2% 50%;
+}
+.dot{
+    width: 40%;
 }

@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="script.js" type="text/javascript" defer></script>
-</head>
-<body>
-<div class="container">
-        <div class="calc-window">
-        <div class="calc-display">
-            0
-        </div>
-
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc-window">
+        <div class="calc-display"></div>
         <div class="calc-operatorpadH">
-            <button class="+/-" id = "operatorkeysH">+/-</button>
-            <button class="mod" id = "operatorkeysH">%</button>
-            <button class="divide" id = "operatorkeysH">/</button>
-            <button class="clear" id = "operatorkeysH">AC</button>
+          <button class="+/-" id="operatorkeysH">+/-</button>
+          <button class="mod" id="operatorkeysH">%</button>
+          <button class="divide" id="operatorkeysH">/</button>
+          <button class="clear" id="operatorkeysH">AC</button>
         </div>
 
-        <div class="calc-numberpad">
-            <button class="7" id="numberkeys">7</button>
-            <button class="8" id="numberkeys">8</button>
-            <button class="9" id="numberkeys">9</button><br>
-            <button class="4" id="numberkeys">4</button>
-            <button class="5" id="numberkeys">5</button>
-            <button class="6" id="numberkeys">6</button><br>
-            <button class="1" id="numberkeys">1</button>
-            <button class="2" id="numberkeys">2</button>
-            <button class="3" id="numberkeys">3</button><br>
-            <button class="zero-button" id="numberkeys">0</button>
-            <button class="dot" id="numberkeys">.</button>
-        </div>
+        <div class="calc-buttons">
+          <div class="calc-numberpad">
+            <div class="num">
+              <button class="7" id="numberkeys">7</button>
+              <button class="8" id="numberkeys">8</button>
+              <button class="9" id="numberkeys">9</button><br />
+            </div>
+            <div class="num">
+              <button class="4" id="numberkeys">4</button>
+              <button class="5" id="numberkeys">5</button>
+              <button class="6" id="numberkeys">6</button><br />
+            </div>
+            <div class="num">
+              <button class="1" id="numberkeys">1</button>
+              <button class="2" id="numberkeys">2</button>
+              <button class="3" id="numberkeys">3</button><br />
+            </div>
+            <div class="ending-button">
+              <div class="zero-button">
+                <button  id="numberkeys">0</button>
+              </div>
+              <div class="dot">
+                <button  id="numberkeys">.</button>
+              </div>
+            </div>
+          </div>
 
-        <div class="calc-operatorpadV">
+          <div class="calc-operatorpadV">
             <button class="mult" id="operatorkeysV">*</button>
             <button class="sub" id="operatorkeysV">-</button>
             <button class="add" id="operatorkeysV">+</button>
             <button class="equals" id="operatorkeysV">=</button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
